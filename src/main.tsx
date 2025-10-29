@@ -4,19 +4,18 @@ import App from './App';
 import './styles/index.css';
 
 async function enableMocking() {
-  if (import.meta.env.MODE === 'development') {
-    console.log('[MSW] Initializing Mock Service Worker...');
-    const { worker } = await import('./mocks/browser');
-    return worker.start({
-      serviceWorker: {
-        url: '/mockServiceWorker.js',
-      },
-      onUnhandledRequest: 'bypass',
-      quiet: false,
-    }).then(() => {
-      console.log('[MSW] Mock Service Worker started successfully!');
-    });
-  }
+  // Enable MSW in both development and production for demo
+  console.log('[MSW] Initializing Mock Service Worker...');
+  const { worker } = await import('./mocks/browser');
+  return worker.start({
+    serviceWorker: {
+      url: '/mockServiceWorker.js',
+    },
+    onUnhandledRequest: 'bypass',
+    quiet: false,
+  }).then(() => {
+    console.log('[MSW] Mock Service Worker started successfully!');
+  });
 }
 
 enableMocking().then(() => {

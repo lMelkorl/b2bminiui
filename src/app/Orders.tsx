@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Eye, ShoppingCart, SlidersHorizontal, Copy, Check, X, Package, MapPin, Phone, Mail, FileText, User } from 'lucide-react';
+import { Eye, ShoppingCart, SlidersHorizontal, Copy, Check, X, Package, Mail, FileText, User } from 'lucide-react';
 import { Dialog, DialogPanel, DialogTitle, DialogBackdrop } from '@headlessui/react';
 import { Table, TableHeader, TableBody, TableRow, TableHead, TableCell } from '../components/ui/Table';
 import Button from '../components/ui/Button';
@@ -21,7 +20,6 @@ interface Order {
 }
 
 export default function Orders() {
-  const navigate = useNavigate();
   const [orders, setOrders] = useState<Order[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [statusFilter, setStatusFilter] = useState('Tümü');
@@ -111,24 +109,6 @@ export default function Orders() {
     
     return sortDirection === 'asc' ? aValue - bValue : bValue - aValue;
   });
-
-  const updateOrderStatus = async (orderId: string, newStatus: string) => {
-    try {
-      const response = await fetch(`/api/orders/${orderId}/status`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ status: newStatus }),
-      });
-      
-      if (response.ok) {
-        setOrders(orders.map(order => 
-          order.id === orderId ? { ...order, status: newStatus } : order
-        ));
-      }
-    } catch (error) {
-      console.error('Durum güncellenemedi:', error);
-    }
-  };
 
   const getStatusIcon = (status: string) => {
     switch (status) {
