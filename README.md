@@ -1,4 +1,5 @@
-# Mücevherat B2B Yönetim Paneli
+# Mücevherat B2B Yönetim Paneli 
+## https://b2bminiui.vercel.app/
 
 Modern, responsive ve kullanıcı dostu bir mücevherat B2B yönetim paneli. React 18+, TypeScript, TailwindCSS ve Headless UI ile geliştirilmiştir.
 
