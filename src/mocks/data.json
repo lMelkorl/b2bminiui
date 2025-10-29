@@ -1,0 +1,249 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@mucevherat.com",
+      "password": "admin123",
+      "name": "Admin Kullanıcı",
+      "role": "admin"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Altın Kolye",
+      "category": "Kolye",
+      "price": 15000,
+      "stock": 25,
+      "material": "14 Ayar Altın",
+      "weight": "5.2g",
+      "description": "Zarif tasarım 14 ayar altın kolye",
+      "image": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400&fit=crop",
+      "createdAt": "2024-10-15T10:30:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Pırlanta Yüzük",
+      "category": "Yüzük",
+      "price": 45000,
+      "stock": 12,
+      "material": "18 Ayar Beyaz Altın",
+      "weight": "3.8g",
+      "description": "1 karat pırlanta taşlı tek taş yüzük",
+      "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=400&fit=crop",
+      "createdAt": "2024-10-14T09:15:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Gümüş Bileklik",
+      "category": "Bileklik",
+      "price": 2500,
+      "stock": 50,
+      "material": "925 Ayar Gümüş",
+      "weight": "12.5g",
+      "description": "Modern tasarım gümüş bileklik",
+      "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=400&fit=crop",
+      "createdAt": "2024-10-13T14:20:00Z"
+    },
+    {
+      "id": "4",
+      "name": "Zümrüt Küpe",
+      "category": "Küpe",
+      "price": 32000,
+      "stock": 8,
+      "material": "18 Ayar Altın",
+      "weight": "4.2g",
+      "description": "Doğal zümrüt taşlı küpe",
+      "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&h=400&fit=crop",
+      "createdAt": "2024-10-12T11:45:00Z"
+    },
+    {
+      "id": "5",
+      "name": "Safir Kolye",
+      "category": "Kolye",
+      "price": 38000,
+      "stock": 15,
+      "material": "18 Ayar Beyaz Altın",
+      "weight": "6.1g",
+      "description": "Mavi safir taşlı zarif kolye",
+      "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400&h=400&fit=crop",
+      "createdAt": "2024-10-11T16:30:00Z"
+    },
+    {
+      "id": "6",
+      "name": "Elmas Bileklik",
+      "category": "Bileklik",
+      "price": 85000,
+      "stock": 5,
+      "material": "18 Ayar Beyaz Altın",
+      "weight": "18.3g",
+      "description": "Sıra taşlı elmas bileklik",
+      "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=400&fit=crop",
+      "createdAt": "2024-10-10T08:00:00Z"
+    },
+    {
+      "id": "7",
+      "name": "İnci Küpe",
+      "category": "Küpe",
+      "price": 5500,
+      "stock": 30,
+      "material": "14 Ayar Altın",
+      "weight": "2.8g",
+      "description": "Doğal inci taşlı klasik küpe",
+      "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&h=400&fit=crop",
+      "createdAt": "2024-10-09T13:15:00Z"
+    },
+    {
+      "id": "8",
+      "name": "Solitaire Yüzük",
+      "category": "Yüzük",
+      "price": 52000,
+      "stock": 10,
+      "material": "Platin",
+      "weight": "4.5g",
+      "description": "Platin solitaire pırlanta yüzük",
+      "image": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=400&fit=crop",
+      "createdAt": "2024-10-08T10:30:00Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-2024-001",
+      "customerName": "Ayşe Yılmaz",
+      "customerEmail": "ayse@example.com",
+      "customerPhone": "+90 532 123 4567",
+      "orderDate": "2024-10-25T14:30:00Z",
+      "status": "Teslim Edildi",
+      "totalAmount": 47500,
+      "items": [
+        {
+          "productId": "2",
+          "productName": "Pırlanta Yüzük",
+          "quantity": 1,
+          "price": 45000
+        },
+        {
+          "productId": "7",
+          "productName": "İnci Küpe",
+          "quantity": 1,
+          "price": 2500
+        }
+      ],
+      "shippingAddress": "Bağdat Cad. No:123, Kadıköy, İstanbul",
+      "notes": "Hediye paketi yapılacak"
+    },
+    {
+      "id": "ORD-2024-002",
+      "customerName": "Mehmet Demir",
+      "customerEmail": "mehmet@example.com",
+      "customerPhone": "+90 533 234 5678",
+      "orderDate": "2024-10-26T09:15:00Z",
+      "status": "Hazırlanıyor",
+      "totalAmount": 32000,
+      "items": [
+        {
+          "productId": "4",
+          "productName": "Zümrüt Küpe",
+          "quantity": 1,
+          "price": 32000
+        }
+      ],
+      "shippingAddress": "Nişantaşı, Teşvikiye Cad. No:45, Şişli, İstanbul",
+      "notes": ""
+    },
+    {
+      "id": "ORD-2024-003",
+      "customerName": "Zeynep Kaya",
+      "customerEmail": "zeynep@example.com",
+      "customerPhone": "+90 534 345 6789",
+      "orderDate": "2024-10-27T11:20:00Z",
+      "status": "Kargoda",
+      "totalAmount": 17500,
+      "items": [
+        {
+          "productId": "1",
+          "productName": "Altın Kolye",
+          "quantity": 1,
+          "price": 15000
+        },
+        {
+          "productId": "3",
+          "productName": "Gümüş Bileklik",
+          "quantity": 1,
+          "price": 2500
+        }
+      ],
+      "shippingAddress": "Çankaya, Atatürk Bulvarı No:78, Ankara",
+      "notes": "Öğleden sonra teslimat"
+    },
+    {
+      "id": "ORD-2024-004",
+      "customerName": "Can Özkan",
+      "customerEmail": "can@example.com",
+      "customerPhone": "+90 535 456 7890",
+      "orderDate": "2024-10-27T16:45:00Z",
+      "status": "Beklemede",
+      "totalAmount": 85000,
+      "items": [
+        {
+          "productId": "6",
+          "productName": "Elmas Bileklik",
+          "quantity": 1,
+          "price": 85000
+        }
+      ],
+      "shippingAddress": "Alsancak, Kıbrıs Şehitleri Cad. No:156, Konak, İzmir",
+      "notes": "Ödeme onayı bekleniyor"
+    },
+    {
+      "id": "ORD-2024-005",
+      "customerName": "Elif Arslan",
+      "customerEmail": "elif@example.com",
+      "customerPhone": "+90 536 567 8901",
+      "orderDate": "2024-10-28T10:00:00Z",
+      "status": "Hazırlanıyor",
+      "totalAmount": 90000,
+      "items": [
+        {
+          "productId": "5",
+          "productName": "Safir Kolye",
+          "quantity": 1,
+          "price": 38000
+        },
+        {
+          "productId": "8",
+          "productName": "Solitaire Yüzük",
+          "quantity": 1,
+          "price": 52000
+        }
+      ],
+      "shippingAddress": "Karşıyaka, Alaybey Cad. No:234, İzmir",
+      "notes": "Yıldönümü hediyesi"
+    },
+    {
+      "id": "ORD-2024-006",
+      "customerName": "Burak Şen",
+      "customerEmail": "burak@example.com",
+      "customerPhone": "+90 537 678 9012",
+      "orderDate": "2024-10-28T13:30:00Z",
+      "status": "Teslim Edildi",
+      "totalAmount": 5500,
+      "items": [
+        {
+          "productId": "7",
+          "productName": "İnci Küpe",
+          "quantity": 1,
+          "price": 5500
+        }
+      ],
+      "shippingAddress": "Beşiktaş, Barbaros Bulvarı No:89, İstanbul",
+      "notes": ""
+    }
+  ],
+  "summary": {
+    "totalRevenue": 277500,
+    "totalOrders": 6,
+    "totalProducts": 8,
+    "lowStockProducts": 2
+  }
+}
