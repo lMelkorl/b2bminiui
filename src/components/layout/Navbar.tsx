@@ -123,7 +123,7 @@ export default function Navbar() {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
               >
-                <MenuItems className="absolute right-0 mt-2 w-80 origin-top-right glass-strong rounded-xl shadow-xl py-2 focus:outline-none">
+                <MenuItems className="absolute right-0 sm:right-0 mt-2 w-80 max-w-[calc(100vw-2rem)] origin-top-right glass-strong rounded-xl shadow-xl py-2 focus:outline-none">
                   <div className="px-4 py-2 border-b border-gray-200/50 dark:border-gray-700/50">
                     <p className="text-sm font-bold text-gray-900 dark:text-white">Bildirimler</p>
                   </div>
